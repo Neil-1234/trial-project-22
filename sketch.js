@@ -45,7 +45,7 @@ function draw() {
 
 
   
-  
+  keyPressed();
   drawSprites();
 
 }
@@ -53,12 +53,14 @@ function draw() {
 function keyPressed() {
 	//write code here
 
-    if(keyPressed("right")){
-		velocityX = -3;
+    if(keyDown("right_arrow")){
+		fairy.x = fairy.x + 5;
+
 	}
 	
-	if (keyPressed("left")){
-		velocityX = +3;
+if(keyDown("left_arrow")){
+		fairy.x = fairy.x - 5;
+
 	}
 
 
